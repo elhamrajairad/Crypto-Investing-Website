@@ -1,0 +1,74 @@
+:root {
+  --white: #fcfcfc;
+  --primary-color: #7d45f5;
+  --light-color: #fffafa;
+  --dark-color: #2d2c33;
+  --gray-color: #7a7a7a;
+
+  /* border-radius */
+  --border-radius-xs: 0.5rem;
+  --border-radius-s: 1rem;
+  --border-radius-m: 1.5rem;
+  --border-radius-lg: 2rem;
+  --border-radius-xlg: 2.5rem;
+
+  /* transition */
+  --transition: all 0.5s;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.flex-direction-column {
+  flex-direction: column;
+}
+.flex-direction-row {
+  flex-direction: row;
+}
+.justify-content-space-between {
+  justify-content: space-between;
+}
+.justify-content-space-around {
+  justify-content: space-around;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+.align-items-baseline {
+  align-items: baseline;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-flex-end {
+  align-items: flex-end;
+}
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+.gap-2 {
+  gap: 2rem;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.gap-4 {
+  gap: 4rem;
+}
+
+.gride {
+  display: grid;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
