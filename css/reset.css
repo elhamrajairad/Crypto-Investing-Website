@@ -37,6 +37,7 @@ input[type="text"]::placeholder {
 button {
   cursor: pointer;
   font-family: inherit;
+  background-color: transparent;
 }
 
 ul {

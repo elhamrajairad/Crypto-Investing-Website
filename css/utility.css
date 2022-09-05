@@ -1,12 +1,12 @@
 :root {
-  --primary-color: #17A5F9;
+  --primary-color: #17a5f9;
 
   --light-color: #fffafa;
   --dark-color: #0a0a0a;
   --gray-color: #7a7a7a;
 
-  --white-color:#fff;
-  --black-color:#000;
+  --white-color: #fff;
+  --black-color: #000;
 
   /* border-radius */
   --border-radius-xs: 0.5rem;
@@ -70,9 +70,32 @@
   max-width: 1400px;
 }
 
-.btn{
+.btn {
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius-xs);
   padding: 0.5rem 3rem;
+}
+.width-100{
+  width: 100%;
+}
+/* margin-top */
+.mt-sm {
+  margin-top: 1rem;
+}
+.mt-m {
+  margin-top: 2rem;
+}
+.mt-lg {
+  margin-top: 3rem;
+}
+/* margin-bottom */
+.mb-sm {
+  margin-bottom: 1rem;
+}
+.mb-m {
+  margin-bottom: 2rem;
+}
+.mb-lg {
+  margin-bottom: 3rem;
 }
 
