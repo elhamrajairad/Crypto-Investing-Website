@@ -26,6 +26,7 @@
 .description {
   color: var(--gray-color);
   font-size: 1.4rem;
+  font-weight: 500;
 }
 .hero__text {
   width: 40%;
@@ -81,7 +82,8 @@
 }
 .features__card p {
   color: var(--gray-color);
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 /* popular */
 #popular {
@@ -110,6 +112,42 @@ td img {
 }
 .red {
   color: red;
+}
+/* dashboard */
+#dashboard {
+  padding: 10rem 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(
+    312deg,
+    rgba(23, 165, 249, 1) 0%,
+    rgba(18, 34, 115, 1) 100%
+  );
+}
+.dashboard__text,
+.dashboard__pic {
+  width: 50%;
+}
+.dashboard__pic img {
+  width: 100%;
+}
+.dashboard__text p {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.dashboard__text--lists li {
+  position: relative;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+.dashboard__text--lists li::before {
+  content: "\f00c";
+  position: absolute;
+  left: -3rem;
+  color: var(--primary-color);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 2rem;
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
@@ -151,6 +189,28 @@ td img {
     flex-direction: column;
     flex-wrap: wrap;
   }
+  /* features */
+  .features__cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* dashboard */
+  .dashboard {
+    flex-direction: column;
+  }
+  #dashboard .heading {
+    margin-bottom: 3rem;
+  }
+  .dashboard__text {
+    width: 100%;
+  }
+  .dashboard__text--lists li {
+    left: 4rem;
+  }
+  .dashboard__pic {
+    width: 100%;
+    order: -1;
+  }
 }
 
 /* Small devices (landscape phones, less than 768px) */
@@ -185,6 +245,23 @@ td img {
   .features__cards {
     flex-direction: column;
     flex-wrap: wrap;
+  }
+  /* dashboard */
+  #dashboard .heading {
+    margin-bottom: 3rem;
+  }
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard__text {
+    width: 100%;
+  }
+  .dashboard__text--lists li {
+    left: 4rem;
+  }
+  .dashboard__pic {
+    width: 100%;
+    order: -1;
   }
 }
 
