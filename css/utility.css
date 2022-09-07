@@ -51,6 +51,9 @@
 .align-items-flex-start {
   align-items: flex-start;
 }
+.align-items-stretch {
+  align-items: stretch;
+}
 
 .gap-1 {
   gap: 1rem;
