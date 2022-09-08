@@ -1,0 +1,29 @@
+@import "./reset.css";
+@import "./utility.css";
+#about{
+    margin: 5rem 0;
+    padding: 2rem;
+}
+.item{
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+.item img{
+    width: 6rem;
+}
+.item strong{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+.item p{
+    text-align: center;
+    font-weight: 300;
+    font-size: 1.4rem;
+    opacity: 0.7;
+}
+.item:hover{
+    box-shadow: 0 0 0.5em 0.3rem var(--primary-color);
+}
