@@ -1,29 +1,56 @@
 @import "./reset.css";
 @import "./utility.css";
-#about{
-    margin: 5rem 0;
-    padding: 2rem;
+@import "./styles.css";
+#about {
+  margin: 5rem 0;
+  padding: 2rem;
 }
-.item{
-    border: 1px solid var(--primary-color);
-    border-radius: var(--border-radius-lg);
-    padding: 2rem;
-    transition: var(--transition);
-    cursor: pointer;
+.item {
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  transition: var(--transition);
+  cursor: pointer;
 }
-.item img{
-    width: 6rem;
+.item img {
+  width: 6rem;
 }
-.item strong{
-    color: var(--primary-color);
-    font-size: 1.8rem;
+.item strong {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 500;
 }
-.item p{
-    text-align: center;
-    font-weight: 300;
-    font-size: 1.4rem;
-    opacity: 0.7;
+.item p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4rem;
+  opacity: 0.7;
 }
-.item:hover{
-    box-shadow: 0 0 0.5em 0.3rem var(--primary-color);
+.item:hover {
+  box-shadow: 0 0 0.5em 0.3rem var(--primary-color);
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .items {
+    flex-direction: column;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .items {
+        flex-direction: column;
+      }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
 }
