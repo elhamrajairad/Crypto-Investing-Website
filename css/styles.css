@@ -1,0 +1,344 @@
+@import "./reset.css";
+
+/* header */
+#header {
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray-color);
+}
+.navbar a {
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.navbar a:hover{
+  color: var(--primary-color);
+}
+/* hero section */
+#hero {
+  padding: 1rem;
+  margin-top: 7rem;
+}
+.avtive {
+  background-color: var(--primary-color);
+}
+.text-primary {
+  color: var(--primary-color);
+}
+.description {
+  color: var(--gray-color);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.hero__text {
+  width: 40%;
+}
+.hero__text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+.hero__text__btn .btn {
+  color: var(--white-color);
+  padding: 1rem 2rem;
+}
+.hero__pic {
+  width: 60%;
+}
+.hero__pic img {
+  width: 100%;
+}
+/* features */
+#features {
+  padding: 2rem;
+  margin: 7rem 0;
+}
+.features__card {
+  border: 1px solid var(--primary-color);
+  padding: 3rem;
+  border-radius: var(--border-radius-s);
+  transition: var(--transition);
+}
+.features__card:hover{
+  cursor: pointer;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0 1rem 0.2rem var(--primary-color);
+}
+.heading {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+.features__icons i {
+  color: var(--white-color);
+  font-size: 3rem;
+  position: relative;
+}
+.features__icons i::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 3rem;
+  left: -1rem;
+  z-index: -1;
+  border: 2px solid var(--primary-color);
+}
+.features__header {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+.features__card p {
+  color: var(--gray-color);
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+/* popular */
+#popular {
+  padding: 2rem;
+  margin-bottom: 7rem;
+}
+.popular table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 3rem;
+}
+.popular table tr {
+  text-align: center;
+}
+th {
+  border-bottom: 1px solid var(--primary-color);
+  line-height: 3rem;
+  font-weight: 500;
+}
+td img {
+  width: 25px;
+  margin-right: 1rem;
+}
+tr{
+  cursor: pointer;
+}
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
+/* dashboard */
+#dashboard {
+  padding: 10rem 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(
+    312deg,
+    rgba(23, 165, 249, 1) 0%,
+    rgba(18, 34, 115, 1) 100%
+  );
+}
+.dashboard__text,
+.dashboard__pic {
+  width: 50%;
+}
+.dashboard__pic img {
+  width: 100%;
+}
+.dashboard__text p {
+  font-weight: 400;
+  opacity: 0.7;
+}
+.dashboard__text--lists li {
+  position: relative;
+  line-height: 3rem;
+  font-size: 1.3rem;
+  opacity: 0.7;
+}
+.dashboard__text--lists li::before {
+  content: "\f00c";
+  position: absolute;
+  left: -3rem;
+  color: var(--primary-color);
+  font-family: "Font Awesome 5 Free";
+  font-weight: 700;
+  font-size: 2rem;
+}
+#footer {
+  padding: 2rem;
+}
+.footer__logo {
+  padding: 3rem;
+}
+.footer__logo p {
+  font-size: 1.3rem;
+  color: var(--gray-color);
+  margin-top: 1rem;
+}
+.footer__links {
+  padding: 3rem;
+}
+.footer__links strong {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+}
+.footer__links ul li a {
+  display: block;
+  margin: 0.5rem 0;
+  color: var(--white-color);
+  font-weight: 300;
+}
+.footer__links ul li a:hover {
+  color: var(--gray-color);
+}
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  /* nav bar */
+  .navbar {
+    display: block;
+  }
+  .navbar__logo {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .navbar__link {
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+  }
+  /* hero */
+  #hero {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .hero__text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .hero__text__btn {
+    justify-content: center;
+  }
+  .hero__pic {
+    width: 100%;
+    order: -1;
+  }
+  /* features */
+  .features__cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* features */
+  .features__cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* dashboard */
+  .dashboard {
+    flex-direction: column;
+  }
+  #dashboard .heading {
+    margin-bottom: 3rem;
+  }
+  .dashboard__text {
+    width: 100%;
+  }
+  .dashboard__text--lists li {
+    left: 4rem;
+  }
+  .dashboard__pic {
+    width: 100%;
+    order: -1;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  /* nav bar */
+  .navbar a {
+    font-size: 1.3rem;
+  }
+  .navbar__link {
+    gap: 2rem;
+  }
+  /* hero */
+  #hero {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .hero__text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .hero__text__btn {
+    justify-content: center;
+  }
+  .hero__pic {
+    width: 100%;
+    order: -1;
+  }
+  /* features */
+  .features__cards {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  /* dashboard */
+  #dashboard .heading {
+    margin-bottom: 3rem;
+  }
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard__text {
+    width: 100%;
+  }
+  .dashboard__text--lists li {
+    left: 4rem;
+  }
+  .dashboard__pic {
+    width: 100%;
+    order: -1;
+  }
+  /* footer */
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #hero {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .hero__text {
+    width: 100%;
+    text-align: center;
+  }
+  .hero__text h1 {
+    font-size: 3rem;
+  }
+  .hero__text__btn {
+    justify-content: center;
+  }
+  .hero__pic {
+    width: 100%;
+    order: -1;
+  }
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+}
+
+/* X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) {
+}
+
+/* XX-Large devices (larger desktops) */
+/* No media query since the xxl breakpoint has no upper bound on its width */
