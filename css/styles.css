@@ -9,13 +9,13 @@
   color: var(--white-color);
   transition: var(--transition);
 }
-.navbar a:hover {
+.navbar a:hover{
   color: var(--primary-color);
 }
-
 /* hero section */
 #hero {
   padding: 1rem;
+  margin-top: 7rem;
 }
 .avtive {
   background-color: var(--primary-color);
@@ -48,12 +48,18 @@
 /* features */
 #features {
   padding: 2rem;
-  margin: 3rem 0;
+  margin: 7rem 0;
 }
 .features__card {
   border: 1px solid var(--primary-color);
   padding: 3rem;
   border-radius: var(--border-radius-s);
+  transition: var(--transition);
+}
+.features__card:hover{
+  cursor: pointer;
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0 1rem 0.2rem var(--primary-color);
 }
 .heading {
   color: var(--primary-color);
@@ -88,7 +94,7 @@
 /* popular */
 #popular {
   padding: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 7rem;
 }
 .popular table {
   width: 100%;
@@ -106,6 +112,9 @@ th {
 td img {
   width: 25px;
   margin-right: 1rem;
+}
+tr{
+  cursor: pointer;
 }
 .green {
   color: green;

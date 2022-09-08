@@ -76,7 +76,12 @@
 .btn {
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius-xs);
+  transition: var(--transition);
   padding: 0.5rem 3rem;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 0 0 1rem 0.2rem var(--primary-color);
 }
 .width-100 {
   width: 100%;
